@@ -34,7 +34,7 @@ public class EmployeeController {
     }
 
     /**
-     * This method will fetch all the students from database  .
+     * This method will fetch all the employee from database  .
      *
      * @return list of employee  .
      */
@@ -44,10 +44,10 @@ public class EmployeeController {
     }
 
     /**
-     * this method fetch student with the help of its id  .
+     * this method fetch employee with the help of its id  .
      *
      * @param employeeId the Id  .
-     * @return student  .
+     * @return employee  .
      */
     @GetMapping("/employee/get/{employeeId}")
     public Employee getEmployeeById(@PathVariable("employeeId") Long employeeId) {
@@ -57,7 +57,7 @@ public class EmployeeController {
     }
 
     /**
-     *   This method update the Student present in Database  .
+     *   This method update the Employee present in Database  .
      *
      * @param employee updated employee  .
      * @return employee  .
